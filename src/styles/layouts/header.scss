@@ -1,0 +1,23 @@
+@import "../theme/colors.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 27px; 
+
+    &__menuList {
+        display: flex;
+        gap: 26px;
+    }
+}
+
+ul {
+    list-style-type: none;
+  }
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: $primary-color;
+}
