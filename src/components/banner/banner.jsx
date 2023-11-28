@@ -1,20 +1,15 @@
 import React from "react";
-import home_banner from "../../assets/banner/home_banner.png";
 
 function banner({ image, texte }) {
   return (
     <div className="banner">
       <img
-        src={home_banner}
-        alt="Une falaise en bord de mer"
         className="banner__img"
+        src={image}
+        alt="Une falaise en bord de mer"
       />
-      <div className="banner__title">
-        <h1>
-          <span>Chez vous,</span>
-          <span>partout et ailleurs</span>
-        </h1>
-      </div>
+      <div className="banner__background"></div>
+      <h1 className="banner__title">{texte}</h1>
     </div>
   );
 }

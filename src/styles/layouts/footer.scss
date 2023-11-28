@@ -3,9 +3,18 @@
 .footer {
     background-color: $quaternary-color;
     margin-top: 27px;
+
+    &__contentTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 209px;
+        text-align: center;
+    }
 }
 
-.footer__contentTitle {
-    display: flex;
-    justify-content: center;
+
+.footer p {
+    color: $tertiary-color;
 }

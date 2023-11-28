@@ -2,22 +2,27 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 0 20px 27px; 
 
     &__menuList {
         display: flex;
         gap: 26px;
+        align-items: center;
     }
 }
 
-ul {
+.header ul {
     list-style-type: none;
+    font-size: 12px;
   }
 
-a {
+.header a {
     display: flex;
     text-decoration: none;
     color: $primary-color;
+}
+
+.header img {
+    width: 145px;
 }
