@@ -3,9 +3,12 @@
         background-color: $primary-color;
         color: $tertiary-color;
         border-radius: 5px;
-        padding: 10px 0px 10px 10px;
+        padding: 10px 10px 10px 10px;
         z-index: 10;
         position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__content {
@@ -16,5 +19,9 @@
         padding: 16px 20px 10px;
         font-size: 12px;
         font-weight: 400;
+    }
+
+    &__chevron {
+        fill: $tertiary-color;
     }
 }
