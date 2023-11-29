@@ -3,12 +3,19 @@
 .header {
     display: flex;
     align-items: center;
-    margin: 0 20px 27px; 
+    margin-bottom: 27px;
+    justify-content: space-between;
+    gap: 10px;
 
     &__menuList {
         display: flex;
         gap: 26px;
         align-items: center;
+        padding: 0px;
+        :hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
     }
 }
 

@@ -8,7 +8,7 @@ function banner({ image, texte }) {
         src={image}
         alt="Une falaise en bord de mer"
       />
-      <div className="banner__background"></div>
+      <div className="banner__shadow"></div>
       <h1 className="banner__title">{texte}</h1>
     </div>
   );

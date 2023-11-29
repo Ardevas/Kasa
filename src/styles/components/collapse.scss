@@ -1,0 +1,20 @@
+.collapse {
+    &__title {
+        background-color: $primary-color;
+        color: $tertiary-color;
+        border-radius: 5px;
+        padding: 10px 0px 10px 10px;
+        z-index: 10;
+        position: relative;
+    }
+
+    &__content {
+        background-color: $secondary-color;
+        color: $primary-color;
+        border-radius: 0px 0px 5px 5px;
+        margin-top: -22px; /* Ajustez la valeur en fonction de vos besoins */
+        padding: 16px 20px 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
