@@ -1,12 +1,12 @@
 import React from "react";
 
-function collapse({ title, children }) {
+function Collapse({ title, description }) {
   return (
     <div className="collapse">
       <h4 className="collapse__title">{title}</h4>
-      <p className="collapse__content">{children}</p>
+      <p className="collapse__content">{description}</p>
     </div>
   );
 }
 
-export default collapse;
+export default Collapse;
