@@ -1,6 +1,6 @@
 import React from "react";
 
-function host({ name, picture }) {
+export default function Host({ name, picture }) {
   return (
     <div className="host">
       <p className="host__name">{name}</p>
@@ -8,5 +8,3 @@ function host({ name, picture }) {
     </div>
   );
 }
-
-export default host;

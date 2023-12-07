@@ -1,0 +1,21 @@
+.tags {
+    &__list {
+        display: flex;
+        gap:10px;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondary-color;
+    background-color: $primary-color;
+    border-radius: 5px;
+    list-style-type: none;
+    font-size: 10px;
+    height: 18px;
+    padding: 0 5px 0;
+}

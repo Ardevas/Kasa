@@ -1,15 +1,18 @@
 import React from "react";
-import data from "../../data/housing.json";
-import StarEmpty from "../../assets/icons/stars_empty.svg";
-import StarFull from "../../assets/icons/stars_full.svg";
+import StarEmpty from "../../assets/stars/star_empty.svg";
+import StarFull from "../../assets/stars/star_full.svg";
 
-export default function Stars() {
-  return (
-    <div className="stars">
-      <div className="star">
-        <StarEmpty />
-        <StarFull />
-      </div>
+export default function Stars({ rating }) {
+  const ratingValue = parseInt(rating, 10);
+  const stars = Array.from({ length: 5 }, (_, index) => (
+    <div key={index} className="star">
+      {index < ratingValue ? (
+        <img src={StarFull} alt="Full Star" />
+      ) : (
+        <img src={StarEmpty} alt="Empty Star" />
+      )}
     </div>
-  );
+  ));
+
+  return <div className="stars">{stars}</div>;
 }
