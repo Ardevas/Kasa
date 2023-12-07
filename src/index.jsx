@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/housing" element={<Housing />} />
+        <Route path="/housing/:id" element={<Housing />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
@@ -28,4 +28,5 @@ function App() {
 // Utilisation de ReactDOM.createRoot
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
+
 root.render(<App />);

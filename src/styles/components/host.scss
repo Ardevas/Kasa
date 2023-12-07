@@ -1,0 +1,19 @@
+.host {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    &__name {
+        color: $primary-color;
+        width: 93px;
+        text-align: right;
+    }
+
+    &__img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

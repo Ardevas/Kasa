@@ -1,6 +1,6 @@
 import React from "react";
 
-function housing() {
+function housing_infos() {
   return (
     <div className="housing">
       <h1>housing</h1>
@@ -8,4 +8,4 @@ function housing() {
   );
 }
 
-export default housing;
+export default housing_infos;
