@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-// import Carrousel from "../components/carrousel/carrousel.jsx";
-// import HousingInfos from "../components/housing/housing_infos.jsx";
+import Carousel from "../components/carousel/carousel.jsx";
+import HousingInfos from "../components/housing/housing_infos.jsx";
 import Tags from "../components/tags/tags.jsx";
 import Stars from "../components/rating/rating.jsx";
 import Host from "../components/host/host.jsx";
@@ -20,8 +20,11 @@ export default function Housing() {
   return (
     <div className="housing">
       <div className="housing__content">
-        {/* <Carrousel /> */}
-        {/* <HousingInfos /> */}
+        <Carousel pictures={selectedLogement.pictures} />
+        <HousingInfos
+          title={selectedLogement.title}
+          location={selectedLogement.location}
+        />
         <Tags tags={selectedLogement.tags} />
         <Stars rating={selectedLogement.rating} />
         <Host

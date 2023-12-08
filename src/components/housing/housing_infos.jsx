@@ -1,11 +1,10 @@
 import React from "react";
 
-function housing_infos() {
+export default function housing_infos({ title, location }) {
   return (
     <div className="housing">
-      <h1>housing</h1>
+      <h2>{title}</h2>
+      <h3>{location}</h3>
     </div>
   );
 }
-
-export default housing_infos;

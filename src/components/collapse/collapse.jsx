@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Chevron from "../../assets/logo/chevron.svg";
+import Chevron from "../../assets/icons/chevron.svg";
 
 export default function Collapse({ title, description }) {
   const [isExpanded, setExpanded] = useState(false);
