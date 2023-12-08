@@ -8,6 +8,20 @@ export default function Collapse({ title, description }) {
     setExpanded(!isExpanded);
   };
 
+  const listRender = () => {
+    if (title.toLowerCase() === "equipements") {
+      return (
+        <ul className="collapse__content">
+          {description.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      );
+    } else {
+      return <p className="collapse__content">{description}</p>;
+    }
+  };
+
   return (
     <div className={`collapse ${isExpanded ? "expanded" : ""}`}>
       <h4 className="collapse__title">
@@ -16,7 +30,7 @@ export default function Collapse({ title, description }) {
           <img src={Chevron} alt="Chevron" />
         </span>
       </h4>
-      {isExpanded && <p className="collapse__content">{description}</p>}
+      {isExpanded && listRender()}
     </div>
   );
 }
