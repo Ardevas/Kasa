@@ -12,6 +12,14 @@ export default function Carousel({ pictures }) {
     setCurrentSlide((currentSlide - 1 + pictures.length) % pictures.length);
   };
 
+  if (pictures.length <= 1) {
+    return (
+      <div className="carousel">
+        <img src={pictures[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
+      </div>
+    );
+  }
+
   return (
     <div className="carousel">
       <img src={pictures[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
