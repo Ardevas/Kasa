@@ -1,3 +1,18 @@
 .housing {
     color: $primary-color;
 }
+
+
+@media (min-width: 769px) {
+    .housing {
+        h2 {
+            margin-bottom: 0;
+            width: 75%;
+
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+    }
+}

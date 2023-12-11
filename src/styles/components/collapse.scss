@@ -45,3 +45,25 @@
     margin: 0;
   }
 }
+
+
+@media screen and (min-width: 768px) {
+  h4, p, ul {
+    font-size: 18px;
+  }
+
+  .collapses {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .collapse {
+    width: 47%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h4 {
+    font-size: 24px;
+  }
+}

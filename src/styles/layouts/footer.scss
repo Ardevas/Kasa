@@ -12,9 +12,26 @@
         height: 209px;
         text-align: center;
     }
+
+    p {
+        width: 150px;
+    }
 }
 
 
 .footer p {
     color: $tertiary-color;
+}
+
+@media (min-width: 769px) {
+    .footer {
+        margin-top: 50px;
+
+        p {
+            width: 100%;
+            margin-top: 28px;
+        }
+    }
+
+    
 }

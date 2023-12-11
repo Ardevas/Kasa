@@ -17,3 +17,13 @@
         object-fit: cover;
     }
 }
+
+
+
+@media screen and (min-width: 768px) {
+    .host {
+        position: relative;
+        bottom: 78px;
+        height: 0;
+    }
+}

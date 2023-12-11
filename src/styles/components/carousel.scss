@@ -36,3 +36,13 @@
     }
   }
 
+  @media screen and (min-width: 768px) {
+
+    .carousel {
+
+      &__arrow img {
+        width: 40px;
+      }
+    }
+
+  }

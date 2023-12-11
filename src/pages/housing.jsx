@@ -7,6 +7,7 @@ import Stars from "../components/rating/rating.jsx";
 import Host from "../components/host/host.jsx";
 import Collapse from "../components/collapse/collapse.jsx";
 import logements from "../data/logements.json";
+import Error404 from "./error.jsx";
 
 export default function Housing() {
   const { id } = useParams();
@@ -14,7 +15,7 @@ export default function Housing() {
   const selectedLogement = logements.find((logement) => logement.id === id);
 
   if (!selectedLogement) {
-    return <div>Logement non trouvé</div>;
+    return <Error404 />;
   }
 
   return (
@@ -31,14 +32,16 @@ export default function Housing() {
           name={selectedLogement.host.name}
           picture={selectedLogement.host.picture}
         />
-        <Collapse
-          title="Description"
-          description={selectedLogement.description}
-        />
-        <Collapse
-          title="Equipements"
-          description={selectedLogement.equipments}
-        />
+        <div className="collapses">
+          <Collapse
+            title="Description"
+            description={selectedLogement.description}
+          />
+          <Collapse
+            title="Equipements"
+            description={selectedLogement.equipments}
+          />
+        </div>
       </div>
     </div>
   );

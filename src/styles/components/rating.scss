@@ -10,3 +10,19 @@
     height: 0px;
     top: 30px;
 }
+
+
+@media screen and (min-width: 768px) {
+    .star img {
+        height: 36px;
+        width: 28px;
+    }
+
+    .stars {
+        gap: 10px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: auto;
+        top: 6px;
+    }
+}

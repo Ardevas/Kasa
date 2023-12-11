@@ -17,19 +17,34 @@
             text-decoration: underline;
         }
     }
+
+    a {
+        display: flex;
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+    ul {
+        list-style-type: none;
+        font-size: 12px;
+      }
+
+    img {
+        width: 145px;
+    }
 }
 
-.header ul {
-    list-style-type: none;
-    font-size: 12px;
-  }
 
-.header a {
-    display: flex;
-    text-decoration: none;
-    color: $primary-color;
-}
+@media (min-width: 769px) {
+    .header {
+        margin-top: 45px;
 
-.header img {
-    width: 145px;
+        ul {
+            font-size: 24px;
+        }
+
+        img {
+            width: 210px;
+        }
+    }
 }

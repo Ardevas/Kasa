@@ -30,3 +30,26 @@
     }
 }
 
+@media (min-width: 769px) {
+    .banner {
+        margin-bottom: 50px;
+
+        &__img {
+            height: 223px;
+            border-radius: 25px;
+        }
+
+        &__shadow {
+            height: 223px;
+            border-radius: 25px;
+        }
+
+        &__title {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            margin-left: 0;
+            top: 50px;
+        }
+    }
+}
