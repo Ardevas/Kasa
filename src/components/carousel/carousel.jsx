@@ -34,6 +34,9 @@ export default function Carousel({ pictures }) {
           <img src={Chevron} alt="Next" className="chevronRight" />
         </button>
       </div>
+      <div className="carousel__counter">
+        {currentSlide + 1}/{pictures.length}
+      </div>
     </div>
   );
 }

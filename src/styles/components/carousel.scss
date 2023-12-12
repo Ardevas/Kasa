@@ -27,6 +27,10 @@
       height: 24px; 
     }
 
+    &__counter {
+      display: none;
+    }
+
     .chevronRight {
         rotate: 90deg;
     }
@@ -34,6 +38,8 @@
     .chevronLeft {
         rotate: -90deg;
     }
+
+
   }
 
   @media screen and (min-width: 768px) {
@@ -42,6 +48,15 @@
 
       &__arrow img {
         width: 40px;
+      }
+
+      &__counter {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 68px;
+        color: $secondary-color;
+        font-size: large;
       }
     }
 
