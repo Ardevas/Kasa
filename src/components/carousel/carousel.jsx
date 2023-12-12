@@ -5,13 +5,16 @@ export default function Carousel({ pictures }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToNextSlide = () => {
+    // If we are on the last slide, go to the first slide
     setCurrentSlide((currentSlide + 1) % pictures.length);
   };
 
   const goToPrevSlide = () => {
+    // If we are on the first slide, go to the last slide
     setCurrentSlide((currentSlide - 1 + pictures.length) % pictures.length);
   };
 
+  // If there is only one picture, we don't need to render the arrows
   if (pictures.length <= 1) {
     return (
       <div className="carousel">

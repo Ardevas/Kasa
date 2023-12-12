@@ -12,10 +12,10 @@ export default function Header() {
       <div className="header__menu">
         <ul className="header__menuList">
           <li className="header__menuList__item">
-            <Link to="/">ACCUEIL</Link>
+            <Link to="/">Accueil</Link>
           </li>
           <li className="header__menuList__item">
-            <Link to="/about">A PROPOS</Link>
+            <Link to="/about">A Propos</Link>
           </li>
         </ul>
       </div>

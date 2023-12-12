@@ -17,6 +17,7 @@ export default function Collapse({ title, description }) {
         </span>
       </h4>
       <div className="collapse__content">
+        {/* If the title is "Equipements", we want to render a list of items */}
         {title.toLowerCase() === "equipements" ? (
           <ul>
             {description.map((item, index) => (

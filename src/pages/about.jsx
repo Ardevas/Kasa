@@ -12,7 +12,11 @@ export default function About() {
       </div>
       <div className="about__collapse">
         {data.map((item) => (
-          <Collapse title={item.title} description={item.description} />
+          <Collapse
+            key={item.id}
+            title={item.title}
+            description={item.description}
+          />
         ))}
       </div>
     </div>

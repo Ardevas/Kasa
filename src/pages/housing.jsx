@@ -10,8 +10,10 @@ import logements from "../data/logements.json";
 import Error404 from "./error.jsx";
 
 export default function Housing() {
+  // Get the id from the url
   const { id } = useParams();
 
+  // Find the logement with the id from the url
   const selectedLogement = logements.find((logement) => logement.id === id);
 
   if (!selectedLogement) {
