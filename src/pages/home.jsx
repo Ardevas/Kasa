@@ -12,11 +12,7 @@ export default function Home() {
         <Banner image={HomeBanner} texte={"Chez vous, partout et ailleurs"} />
         <div className="cards">
           {logements.map((logement) => (
-            <Link
-              key={logement.id}
-              to={`/housing/${logement.id}`}
-              className="cards__content"
-            >
+            <Link to={`/housing/${logement.id}`} className="cards__content">
               <Card texte={logement.title} image={logement.cover} />
             </Link>
           ))}

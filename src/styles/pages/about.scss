@@ -1,0 +1,18 @@
+.about {
+
+    &__content {
+        .banner {
+            margin-bottom: 0;
+        }
+    }
+
+    &__collapse{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .collapse {
+            width: 82%;
+        }
+    }
+}
