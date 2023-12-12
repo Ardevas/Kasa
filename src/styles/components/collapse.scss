@@ -63,7 +63,14 @@
 }
 
 @media screen and (min-width: 1024px) {
-  h4 {
+  .collapse {
+    
+    h4 {
     font-size: 24px;
+    }
+
+    &__content {
+      margin-top: -34px;
+    }
   }
 }

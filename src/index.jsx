@@ -25,7 +25,6 @@ function App() {
   );
 }
 
-// Utilisation de ReactDOM.createRoot
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
