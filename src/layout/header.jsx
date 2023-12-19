@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
 import logo_header from "../assets/logo/logo_header.svg";
+import { useLocation } from "react-router-dom";
 
 export default function Header() {
+  const location = useLocation();
+
+  // Return true if pathname matches current location
+  const isActive = (pathname) => {
+    return location.pathname === pathname;
+  };
+
   return (
     <header className="header">
       <div className="header__logo">
@@ -12,10 +20,14 @@ export default function Header() {
       <div className="header__menu">
         <ul className="header__menuList">
           <li className="header__menuList__item">
-            <Link to="/">Accueil</Link>
+            <Link to="/" className={isActive("/") ? "active" : ""}>
+              Accueil
+            </Link>
           </li>
           <li className="header__menuList__item">
-            <Link to="/about">A Propos</Link>
+            <Link to="/about" className={isActive("/about") ? "active" : ""}>
+              A Propos
+            </Link>
           </li>
         </ul>
       </div>
