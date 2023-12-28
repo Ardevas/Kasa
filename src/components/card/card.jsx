@@ -1,6 +1,6 @@
 import React from "react";
 
-function card({ image, texte }) {
+export default function card({ image, texte }) {
   return (
     <div className="card">
       <img className="card__img" src={image} alt="" />
@@ -8,5 +8,3 @@ function card({ image, texte }) {
     </div>
   );
 }
-
-export default card;
