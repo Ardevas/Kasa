@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Banner from "../components/banner/banner.jsx";
 import HomeBanner from "../assets/banner/home_banner.png";
 import Card from "../components/card/card.jsx";
-import logements from "../data/logements.json";
 
 export default function Home() {
+  const [logements, setLogements] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/logements.json");
+        const data = await response.json();
+        setLogements(data);
+      } catch (error) {
+        console.error("Error fetching logements:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="home">
       <div className="home__content">

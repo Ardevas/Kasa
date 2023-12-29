@@ -18,7 +18,11 @@ export default function Carousel({ pictures }) {
   if (pictures.length <= 1) {
     return (
       <div className="carousel">
-        <img src={pictures[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
+        <img
+          src={pictures[currentSlide]}
+          className={"carousel__image"}
+          alt={`Slide ${currentSlide + 1}`}
+        />
       </div>
     );
   }
@@ -27,8 +31,8 @@ export default function Carousel({ pictures }) {
     <div className="carousel">
       <img
         src={pictures[currentSlide]}
-        alt={`Slide ${currentSlide + 1}`}
         className={"carousel__image"}
+        alt={`Slide ${currentSlide + 1}`}
       />
       <div className="carousel__arrows">
         <button onClick={goToPrevSlide} className="carousel__arrow">
