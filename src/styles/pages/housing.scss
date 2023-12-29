@@ -1,0 +1,9 @@
+.housing {
+    height: 76vh;
+  }
+
+@media (min-width: 769px) {
+    .housing {
+        height: 69vh;
+    }
+}

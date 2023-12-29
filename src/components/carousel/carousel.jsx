@@ -25,7 +25,11 @@ export default function Carousel({ pictures }) {
 
   return (
     <div className="carousel">
-      <img src={pictures[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
+      <img
+        src={pictures[currentSlide]}
+        alt={`Slide ${currentSlide + 1}`}
+        className={"carousel__image"}
+      />
       <div className="carousel__arrows">
         <button onClick={goToPrevSlide} className="carousel__arrow">
           <img src={Chevron} alt="Previous" className="chevronLeft" />
